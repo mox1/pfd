@@ -2,4 +2,4 @@ See http://blog.jgc.org/2012/04/make-your-own-prime-factorization.html
 
 Example:
 
-![4096px Render](https://github.com/mox1/pfd/raw/master/screen-0000.jpg "")
+![4096px Render](screen-0000.jpg "")
