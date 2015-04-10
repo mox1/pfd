@@ -26,18 +26,31 @@ int[] colors = { #ff0000, #e5b073, #73ff40, #23698c, #312040, #a62929,
 // drawn.  This can be made much larger than the screen for saving a
 // large file using saveFrame()
 
-int side = 1024;
+int side = 4096;
+
 
 // When set to true the factors are printed inside the circles,
 // otherwise just colors are used
 
 boolean number = true;
 
+
+// Set the size (in pixels) of the numbers printed inside the circles,
+// only useful if number = true;
+int tsize = 65;
+
+//To load a custom font for the numbers
+PFont f;
+
 // I do everything in setup() because there's no animation and
 // therefore no reason to have code in draw()
 
 void setup() {
     size(side, side);
+    //This assumes there is a "Purisa-Bold-48.vlw" font file in the projects data folder 
+    f = loadFont("Purisa-Bold-48.vlw");
+    textFont(f,tsize);
+    //textSize(tsize);
     background(255);
     stroke(255);
     strokeWeight(2);
